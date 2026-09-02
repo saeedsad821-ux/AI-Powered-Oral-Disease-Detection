@@ -1,15 +1,45 @@
-# AI-Powered Oral Disease Detection System
+# 🦷 AI-Powered Oral Disease Detection System (Deep Learning)
 
-**Using Transfer Learning and Explainable AI**
+![Deep Learning](https://img.shields.io/badge/Framework-TensorFlow%20%7C%20Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Backbone](https://img.shields.io/badge/Backbone-EfficientNetB0%20%7C%20MobileNetV2-0F2854?style=flat-square)
+![Explainable AI](https://img.shields.io/badge/Explainability-Grad--CAM-4988C4?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Deployed_via_Streamlit-success?style=flat-square&logo=streamlit&logoColor=white)
 
-University AI Tools course project. An end-to-end pipeline that classifies six oral
-disease conditions from photographs of the oral cavity using **EfficientNetB0 transfer
-learning**, with **Grad-CAM** explanations for every prediction.
+An end-to-end clinical Deep Learning pipeline that classifies six oral disease conditions from photographs of the oral cavity. Built using **Transfer Learning**, this project benchmarks 4 distinct CNN architectures and implements **Explainable AI (Grad-CAM)** to highlight the clinical features driving the model's predictions.
 
-![Design](https://img.shields.io/badge/design-Modern%20Medical%20AI-0F2854)
-![Framework](https://img.shields.io/badge/framework-TensorFlow%20%2F%20Keras-4988C4)
-![Backbone](https://img.shields.io/badge/backbone-4-Model%20Benchmark-BDE8F5)
-![Status](https://img.shields.io/badge/status-Milestone%203%20(Training%20Benchmark)-1C4D8D)
+---
+
+## 🏗️ System Architecture & ML Pipeline
+
+This project was developed as a Capstone for the Applied AI & Data Analytics Diploma, focusing on clinical data reliability, aggressive augmentation, and diagnostic explainability.
+
+```mermaid
+graph TD
+    A[Clinical Image Dataset] -->|12,320 Images| B(EDA & Quality Assessment)
+    
+    B -->|Sanitized Dataset| C{tf.data Preprocessing Pipeline}
+    
+    C -->|Augmentation, Resize, Scaling| D[Transfer Learning Training Benchmark]
+    
+    subgraph "Neural Network Architectures"
+        D -->|Baseline| E[Custom CNN]
+        D -->|Mobile Edge| F[MobileNetV2]
+        D -->|High Accuracy| G[EfficientNetB3]
+        D -->|Deep Feature Extraction| H[DenseNet121]
+    end
+    
+    G -->|Selected Optimal Model| I[Model Evaluation & Metrics]
+    
+    subgraph "Clinical Deployment"
+        I -->|Weights & Graph| J{Explainable AI Engine}
+        J -->|Generates Heatmap| K[Grad-CAM Visualizer]
+        J -->|Probabilities| L[Streamlit Medical Dashboard]
+    end
+    
+    style C fill:#f9f,stroke:#333
+    style G fill:#ff9,stroke:#333,stroke-width:2px
+    style J fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 ---
 
