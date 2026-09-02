@@ -1,0 +1,45 @@
+# Data (external, huge - 15k+ files)
+Oral Diseases/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+# Trained models
+*.keras
+*.h5
+*.hdf5
+
+models/
+notebooks/models/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+venv/
+
+# One-off scratch / dev scripts (not part of the app)
+fix_*.py
+check_*.py
+check_*.txt
+clean_*.py
+gen_*.py
+analyze_*.py
+tmp_*.txt
+tmp_*.py

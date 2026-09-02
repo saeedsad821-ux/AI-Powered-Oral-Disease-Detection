@@ -1,0 +1,36 @@
+{
+  "milestone": 2,
+  "image_size": 224,
+  "batch_size": 32,
+  "train_images": 8624,
+  "val_images": 1848,
+  "test_images": 1848,
+  "augmentation": [
+    "horizontal_flip",
+    "rotation_15deg",
+    "zoom_0.9-1.1",
+    "translation",
+    "brightness_0.2",
+    "contrast_0.8-1.2"
+  ],
+  "pipeline": [
+    "tf.io.read_file",
+    "decode_image(RGB)",
+    "resize(224,224)",
+    "cast(float32)",
+    "keep[0,255]",
+    "cache",
+    "shuffle",
+    "augment(train)",
+    "batch(32)",
+    "prefetch(AUTOTUNE)"
+  ],
+  "class_weights": {
+    "Calculus": 1.583,
+    "Caries": 0.7893,
+    "Gingivitis": 0.8738,
+    "Ulcers": 0.7318,
+    "Tooth Discoloration": 1.0187,
+    "Hypodontia": 1.6427
+  }
+}

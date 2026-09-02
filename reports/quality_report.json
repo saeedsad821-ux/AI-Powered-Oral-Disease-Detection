@@ -1,0 +1,24 @@
+{
+  "corrupted_images": {
+    "Calculus": 0,
+    "Caries": 0,
+    "Gingivitis": 0,
+    "Ulcers": 0,
+    "Tooth Discoloration": 0,
+    "Hypodontia": 0
+  },
+  "duplicate_filenames": {
+    "within_class": 0,
+    "cross_class_collisions": 1515
+  },
+  "unsupported_files": [],
+  "empty_folders": [
+    "Caries_Gingivitus_ToothDiscoloration_Ulcer-yolo_annotated-Dataset\\Caries_Gingivitus_ToothDiscoloration_Ulcer-yolo_annotated-Dataset\\Data\\labels",
+    "Caries_Gingivitus_ToothDiscoloration_Ulcer-yolo_annotated-Dataset\\Caries_Gingivitus_ToothDiscoloration_Ulcer-yolo_annotated-Dataset\\Data\\labels\\train",
+    "Caries_Gingivitus_ToothDiscoloration_Ulcer-yolo_annotated-Dataset\\Caries_Gingivitus_ToothDiscoloration_Ulcer-yolo_annotated-Dataset\\Data\\labels\\val"
+  ],
+  "label_notes": [
+    "6 classes with consistent folder-to-label mapping.",
+    "Mixed YOLO-annotated folder excluded from training (noisy labels)."
+  ]
+}

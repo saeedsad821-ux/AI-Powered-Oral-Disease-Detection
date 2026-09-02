@@ -1,0 +1,14 @@
+﻿streamlit>=1.38.0
+numpy
+pandas
+matplotlib
+seaborn
+Pillow
+plotly
+scikit-learn
+streamlit>=1.50
+numpy>=1.26
+pandas>=2.0
+pillow>=10.0
+matplotlib>=3.8
+seaborn>=0.13

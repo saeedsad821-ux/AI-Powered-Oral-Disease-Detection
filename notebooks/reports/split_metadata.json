@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "class_map": {
+    "Calculus": "Calculus",
+    "Data caries": "Caries",
+    "Gingivitis": "Gingivitis",
+    "Mouth Ulcer": "Ulcers",
+    "Tooth Discoloration": "Tooth Discoloration",
+    "hypodontia": "Hypodontia"
+  },
+  "train": 8624,
+  "val": 1848,
+  "test": 1848
+}

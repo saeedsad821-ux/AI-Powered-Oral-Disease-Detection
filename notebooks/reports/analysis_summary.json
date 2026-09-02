@@ -1,0 +1,37 @@
+{
+  "total_images": 12320,
+  "classes": 6,
+  "imbalance_ratio": 2.24,
+  "split": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "per_class": [
+    {
+      "class": "Ulcers",
+      "total_images": 2806
+    },
+    {
+      "class": "Caries",
+      "total_images": 2601
+    },
+    {
+      "class": "Gingivitis",
+      "total_images": 2349
+    },
+    {
+      "class": "Tooth Discoloration",
+      "total_images": 2017
+    },
+    {
+      "class": "Calculus",
+      "total_images": 1296
+    },
+    {
+      "class": "Hypodontia",
+      "total_images": 1251
+    }
+  ],
+  "dataset_root": "d:\\AI Tools _project\\Oral Diseases"
+}

@@ -1,0 +1,18 @@
+{
+  "classes": [
+    "Calculus",
+    "Caries",
+    "Gingivitis",
+    "Ulcers",
+    "Tooth Discoloration",
+    "Hypodontia"
+  ],
+  "class_map": {
+    "Calculus": "Calculus",
+    "Data caries": "Caries",
+    "Gingivitis": "Gingivitis",
+    "Mouth Ulcer": "Ulcers",
+    "Tooth Discoloration": "Tooth Discoloration",
+    "hypodontia": "Hypodontia"
+  }
+}
